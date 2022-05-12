@@ -8,12 +8,15 @@ class Pet:
     def deserializar(self, linha):
         dados = linha.split(';')
         self._id = int(dados[0])
-        self._nome = dados[1]
+        self._nome = str(dados[1])
         self._sexo = dados[2]
         self._tipo = dados[3]
     
     def serializar(self):
         return f'\n{self._id};{self._nome};{self._sexo};{self._tipo}'
+
+    def get_nome(self):
+        return self._nome
 
     def get_id(self):
         return self._id
