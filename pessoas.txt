@@ -1,0 +1,3 @@
+id;nome;sexo;pet
+1;Greg;M;1
+2;Ana;F;
